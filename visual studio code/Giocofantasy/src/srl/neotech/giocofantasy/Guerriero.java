@@ -1,4 +1,5 @@
-package srl.giocoFantasy;
+package srl.neotech.giocofantasy;
+
 public class Guerriero extends Umano{
     
 }
