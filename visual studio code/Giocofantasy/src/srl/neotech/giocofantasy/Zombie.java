@@ -1,7 +1,7 @@
 package srl.neotech.giocofantasy;
 
 public class Zombie extends NonMorto{
-
+    public String nome="zombie";
     protected  Double moltiplicatoreAttacco=1.5;
 
 
@@ -17,5 +17,9 @@ public class Zombie extends NonMorto{
     Double danno=difesa-attacco;
     setStamina(getStamina()+danno);
     System.out.println("Allo zombie rimangono"+getStamina()+"Punti vita");
+    }
+    @Override
+    public String toString() {
+        return "Zombie [nome=" + nome + ", moltiplicatoreAttacco=" + moltiplicatoreAttacco + "]";
     }
 }

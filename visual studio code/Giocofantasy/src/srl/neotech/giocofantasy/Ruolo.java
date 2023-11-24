@@ -1,6 +1,7 @@
 package srl.neotech.giocofantasy;
 
 public class Ruolo {
+    public String nomeclasse;
     private Double stamina;
     private Double forzaAttacco;
     private Double forzaDifesa;
@@ -25,5 +26,10 @@ public class Ruolo {
     }
     public void setForzaDifesa(Double forzaDifesa) {
         this.forzaDifesa = forzaDifesa;
+    }
+    @Override
+    public String toString() {
+        return "Ruolo [nomeclasse=" + nomeclasse + ", stamina=" + stamina + ", forzaAttacco=" + forzaAttacco
+                + ", forzaDifesa=" + forzaDifesa + "]";
     }
 }
