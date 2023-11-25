@@ -18,6 +18,8 @@ public class App {
     }
     ArrayList<Ruolo> pirmaArmata=new ArrayList<>();
     Ruolo p1=null;
+    int risultato=2;
+    
     for (int i=0;i<10;i++){
     if (tiporuolo==1) {
         p1=new Goblin();
@@ -117,6 +119,8 @@ public class App {
         secondaArmata.get(i).attacca(secondaArmata.get(i));
         System.out.println("----------");
       }
+      int m=7;
+      
     }
     }
 }
