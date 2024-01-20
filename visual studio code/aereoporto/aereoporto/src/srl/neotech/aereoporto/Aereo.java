@@ -8,8 +8,6 @@ public class Aereo {
     ArrayList<Passeggero>passeggeriABordo=new ArrayList<>();
     Integer capienzaPasseggeri;
     Integer velocita;
-    Integer distanzaAereoporto;
-    Enum statoAereoprto;
     public String getCostruttore() {
         return costruttore;
     }
@@ -46,10 +44,44 @@ public class Aereo {
     public void setDistanzaAereoporto(Integer distanzaAereoporto) {
         this.distanzaAereoporto = distanzaAereoporto;
     }
-    public Enum getStatoAereoprto() {
-        return statoAereoprto;
+    Integer distanzaAereoporto;
+    
+    public String getcostruttore() {
+        return costruttore;
     }
-    public void setStatoAereoprto(Enum statoAereoprto) {
-        this.statoAereoprto = statoAereoprto;
+    public void setcostruttore(String costruttore) {
+        this.costruttore = costruttore;
     }
+    public String getmodello() {
+        return modello;
+    }
+    public void setmodello(String modello) {
+        this.modello = modello;
+    }
+    public ArrayList<Passeggero> getpasseggeriABordo() {
+        return passeggeriABordo;
+    }
+    public void setpasseggeriABordo(ArrayList<Passeggero> passeggeriABordo) {
+        this.passeggeriABordo = passeggeriABordo;
+    }
+    public Integer getcapienzaPasseggeri() {
+        return capienzaPasseggeri;
+    }
+    public void setcapienzaPasseggeri(Integer capienzaPasseggeri) {
+        this.capienzaPasseggeri = capienzaPasseggeri;
+    }
+    public Integer getvelocita() {
+        return velocita;
+    }
+    public void setvelocita(Integer velocita) {
+        this.velocita = velocita;
+    }
+    public Integer getdistanzaAereoporto() {
+        return distanzaAereoporto;
+    }
+    public void setdistanzaAereoporto(Integer distanzaAereoporto) {
+        this.distanzaAereoporto = distanzaAereoporto;
+    }
+
 }
+

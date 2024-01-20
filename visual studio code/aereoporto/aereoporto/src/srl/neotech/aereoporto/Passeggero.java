@@ -1,15 +1,28 @@
 package srl.neotech.aereoporto;
 
 public class Passeggero {
-    enum StatoPasseggero;
-    Enum sesso;
+    StatoPasseggero statoPasseggero;
+    Sesso sesso;
     Integer eta;
     Boolean hasGiocattolo;
-    public Enum getSesso() {
+    Boolean hasFiore;
+    public Sesso getSesso() {
         return sesso;
     }
-    public void setSesso(Enum sesso) {
+    public StatoPasseggero getStatoPasseggero() {
+        return statoPasseggero;
+    }
+    public void setStatoPasseggero(StatoPasseggero statoPasseggero) {
+        this.statoPasseggero = statoPasseggero;
+    }
+    public void setSesso(Sesso sesso) {
         this.sesso = sesso;
+    }
+    public Boolean getHasFiore() {
+        return hasFiore;
+    }
+    public void setHasFiore(Boolean hasFiore) {
+        this.hasFiore = hasFiore;
     }
     public Integer getEta() {
         return eta;
@@ -23,4 +36,5 @@ public class Passeggero {
     public void setHasGiocattolo(Boolean hasGiocattolo) {
         this.hasGiocattolo = hasGiocattolo;
     }
+    
 }

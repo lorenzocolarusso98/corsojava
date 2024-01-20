@@ -1,6 +1,6 @@
 package srl.neotech.aereoporto;
 
-public class PasseggeroTurista {
+public class PasseggeroTurista extends Passeggero{
     Boolean hasGiornale;
 
     public Boolean getHasGiornale() {

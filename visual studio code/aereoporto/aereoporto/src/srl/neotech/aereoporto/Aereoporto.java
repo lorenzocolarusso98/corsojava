@@ -8,7 +8,25 @@ public class Aereoporto {
     Integer spazioAereo;
     ArrayList<Aereo>aereiInPartenza=new ArrayList<>();
     ArrayList<Aereo>aereiInArrivo=new ArrayList<>();
-    ArrayList<Passeggero>passeggeriInPartenza=new ArrayList<>();
+    ArrayList<Passeggero>PasseggeriInPartenza=new ArrayList<>();
+
+ 
+    public void checkin(Aereo ae{
+
+    }
+    
+    public void partenzaAereo(Aereo aereo){
+    while (aereo.distanzaAereoporto>spazioAereo) {
+        aereo.setdistanzaAereoporto(aereo.getdistanzaAereoporto()+aereo.getvelocita());
+    }
+    }
+
+    public void arrivoAereo(Aereo aereoInArrivo){
+    while (aereoInArrivo.distanzaAereoporto<=0) {
+        aereoInArrivo.setDistanzaAereoporto(aereoInArrivo.getDistanzaAereoporto()-aereoInArrivo.getvelocita());
+    }
+    }
+
     public String getNome() {
         return nome;
     }
@@ -40,9 +58,10 @@ public class Aereoporto {
         this.aereiInArrivo = aereiInArrivo;
     }
     public ArrayList<Passeggero> getPasseggeriInPartenza() {
-        return passeggeriInPartenza;
+        return PasseggeriInPartenza;
     }
-    public void setPasseggeriInPartenza(ArrayList<Passeggero> passeggeriInPartenza) {
-        this.passeggeriInPartenza = passeggeriInPartenza;
+    public void setPasseggeriInPartenza(ArrayList<Passeggero> PasseggeriInPartenza) {
+        this.PasseggeriInPartenza = PasseggeriInPartenza;
     }
 }
+

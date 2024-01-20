@@ -1,0 +1,27 @@
+<html>
+<head>
+  <style>h1{color: red;text-align: center;}</style>
+</head>
+<body style="background-color: aqua;" >
+  <h1>Lista canzoni</h1>
+  <table style="background-color: black;font-size: large;">
+    <tr style="background-color: gray;">
+      <td>Autore</td>
+      <td>Canzone</td>
+      <td>Immagine</td>
+      
+    </tr>
+    <tr style="background-color: blanchedalmond;font-style: italic;">
+        <td>[[${primoPosto.autore}]]</td>
+        <td>[[${primoPosto.nome}]]</td>
+      <td><img th:src="${primoPosto.Immagine}"></td>
+      </tr>
+      <tr style="background-color: blanchedalmond;font-style: italic;">
+      <td>[[${secondoPosto.autore}]]</td>
+      <td>[[${secondoPosto.nome}]]</td>
+      <td><img th:src="${secondoPosto.Immagine}" alt=""></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
